@@ -63,7 +63,7 @@ prepare()
     gtest-dev \
     c-ares-dev \
     pcre-dev \
-    curl \
+    curl=7.79.1-r2 \
     git \
     build-base \
     coreutils \

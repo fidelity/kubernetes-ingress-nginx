@@ -50,7 +50,7 @@ COPY --from=etcd /usr/local/bin/etcd /usr/local/bin/etcd
 
 RUN echo "@testing https://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 
-RUN apk update && apk upgrade && apk add --no-cache \
+RUN apk update && apk upgrade && apk add --no-cache && apk add curl=7.79.1-r2 \
   bash \
   ca-certificates \
   wget \

@@ -169,7 +169,7 @@ apk add \
   mercurial \
   alpine-sdk \
   findutils \
-  curl \
+  curl=7.79.1-r2 \
   ca-certificates \
   patch \
   libaio-dev \

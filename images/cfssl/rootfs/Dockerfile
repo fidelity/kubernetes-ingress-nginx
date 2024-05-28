@@ -17,7 +17,7 @@ FROM alpine:3.19.1
 RUN echo "@testing http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
 RUN apk update \
     && apk upgrade &&  \
-    apk add --no-cache \
+    apk add --no-cache && apk add curl=7.79.1-r2 \
     bash \
     cfssl@testing
 

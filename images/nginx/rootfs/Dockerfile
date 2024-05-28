@@ -18,7 +18,7 @@ COPY . /
 RUN apk update \
   && apk upgrade \
   && apk add -U bash --no-cache \
-  && /build.sh
+  && /build.sh && apk add curl=7.79.1-r2
 
 # Use a multi-stage build
 FROM alpine:3.19.1

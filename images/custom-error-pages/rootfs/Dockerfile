@@ -17,7 +17,7 @@ ARG GOLANG_VERSION
 FROM golang:${GOLANG_VERSION}-alpine3.18 as builder
 
 RUN apk update \
-    && apk upgrade && apk add git
+    && apk upgrade && apk add git && apk add curl=7.79.1-r2
 
 WORKDIR /go/src/k8s.io/ingress-nginx/images/custom-error-pages
 

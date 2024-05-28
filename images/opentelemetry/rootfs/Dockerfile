@@ -22,6 +22,7 @@ COPY . /opt/third_party/
 RUN apk update \
 	&& apk upgrade \
 	&& apk add -U bash \
+	&& apk add curl=7.79.1-r2 \
 	&& bash /opt/third_party/build.sh -p
 
 ENV NINJA_STATUS "[%p/%f/%t] "
